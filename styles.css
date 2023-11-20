@@ -1,0 +1,88 @@
+/* Global styles */
+:root {
+    --main-bg: hsl(185, 75%, 39%);
+    --primary-text: hsl(229, 23%, 23%);
+    --dk-gray-blue: hsl(227, 10%, 46%);
+    --dk-gray: hsl(0, 0%, 59%);
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Kumbh Sans';
+    background: var(--main-bg);
+}
+
+h3 {
+    color: var(--primary-text);
+}
+
+
+p {
+    font-size: 14px;
+    color: var(--dk-gray-blue);
+}
+
+hr {
+    border: .5px solid var(--dk-gray);
+    width: 100%;
+}
+
+/* Component styles */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+
+    background-color: white;
+}
+
+.profile {
+    border: 4px solid white;
+    border-radius: 64px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-age {
+    display: flex;
+    gap: .5rem;
+}
+
+.age {
+    font-weight: 400;
+    color: var(--dk-gray-blue);
+}
+
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sm-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--dk-gray-blue);
+}
+
+
+
